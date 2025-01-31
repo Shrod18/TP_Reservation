@@ -1,0 +1,28 @@
+Fonctionnalités
+
+ 1. Affichage Initial
+- Lors du chargement de la page, un premier bloc de réservation est affiché par défaut.
+- Ce bloc contient :
+  - Un sélecteur de date (rempli dynamiquement avec les dates disponibles).
+  - Un champ numérique permettant de saisir le nombre de places (valeur par défaut : 1).
+
+ 2. Ajout d'une Nouvelle Réservation
+- Un bouton "+" permet d'ajouter dynamiquement un nouveau bloc de réservation.
+- Lorsque l'utilisateur clique sur ce bouton :
+  - Un nouveau bloc similaire au premier est ajouté au formulaire.
+  - Il possède un sélecteur de date et un champ numérique
+  - Un bouton "Supprimer" est ajouté à chaque bloc (sauf le premier).
+  - Si un nombre maximal de réservations est atteint (ex: 5), le bouton "+" devient désactivé.
+  - Lorsqu'une date est saisie, elle disparait du select de la réservation suivante
+  - Lorsqu'un bloc de réservation est supprimé, la date sélectionnée dedans est de nouveau selectionnable
+
+ 3. Suppression d'une Réservation
+- Chaque bloc ajouté possède un bouton "Supprimer".
+- Lors du clic sur ce bouton :
+  - Le bloc correspondant est supprimé.
+  - Si le nombre de réservations redevient inférieur au maximum autorisé, le bouton "+" est réactivé.
+
+ 4. Confirmation avant Suppression
+- Lorsqu'un utilisateur tente de supprimer une réservation, une confirmation est demandée.
+
+
