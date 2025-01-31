@@ -1,0 +1,46 @@
+
+form {
+    border: 1px solid #28a745;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+  }
+
+  fieldset {
+    border: 1px solid #007bff;
+    padding: 1em 2em 1em 1em;
+    margin: 1em;
+    position: relative;
+  }
+
+  .remove {
+    margin: 0;
+    width: 100%;
+  }
+
+  legend {
+    padding: 1em 1em 0 1em;
+    color: #007bff;
+  }
+
+  #add {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 45px;
+    color: #fff;
+    font: bold 20px;
+    border-radius: 50%;
+    margin: -45px auto 0;
+  }
+
+  #add.disabled {
+    background-color: #666;
+    opacity: inherit;
+  }
+
+  button {
+    margin-left: 1em;
+    margin-top: 1em;
+  }

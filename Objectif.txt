@@ -1,0 +1,43 @@
+Objectif
+
+Le but de cette application est de permettre aux utilisateurs d'effectuer plusieurs réservations en ajoutant dynamiquement des blocs de réservation contenant un sélecteur de dates et un champ de saisie pour le nombre de places.
+
+Fonctionnalités
+
+1. Affichage Initial
+
+Lors du chargement de la page, un premier bloc de réservation est affiché par défaut.
+
+Ce bloc contient :
+Un sélecteur de date (rempli dynamiquement avec les dates disponibles).
+Un champ numérique permettant de saisir le nombre de places (valeur par défaut : 1).
+
+
+2. Ajout d'une Nouvelle Réservation
+
+Un bouton "+" permet d'ajouter dynamiquement un nouveau bloc de réservation.
+Lorsque l'utilisateur clique sur ce bouton :
+Un nouveau bloc similaire au premier est ajouté au formulaire.
+Il possède un sélecteur de date et un champ numérique.
+Un bouton "Supprimer" est ajouté à chaque bloc (sauf le premier).
+Si un nombre maximal de réservations est atteint (ex: 5), le bouton "+" devient désactivé.
+
+
+3. Suppression d'une Réservation
+
+Chaque bloc ajouté possède un bouton "Supprimer".
+Lors du clic sur ce bouton :
+Le bloc correspondant est supprimé.
+Si le nombre de réservations redevient inférieur au maximum autorisé, le bouton "+" est réactivé.
+
+
+4. Soumission du Formulaire
+
+Lorsque l'utilisateur clique sur "Enregistrer les réservations" :
+
+Les données de chaque bloc sont vérifiées (ex: champ numérique positif, date sélectionnée).
+Si tout est valide, les informations sont envoyées au serveur (ou affichées dans la console pour test).
+Points de Blocage Identifiés
+Désactivation du bouton "+" : Gestion du passage entre activé/désactivé en fonction du nombre de blocs présents.
+Gestion dynamique des ID des champs : Assurer que chaque champ de formulaire ajouté ait un identifiant unique.
+Validation avant soumission : Vérifier que chaque bloc contient des données valides avant d'envoyer.

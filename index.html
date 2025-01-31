@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <style>
+      form {
+        border: 1px solid #28a745;
+        padding: 2em;
+        margin: 2em auto;
+        max-width: 600px;
+      }
+
+      fieldset {
+        border: 1px solid #007bff;
+        padding: 1em 2em 1em 1em;
+        margin: 1em;
+        position: relative;
+      }
+
+      .remove {
+        margin: 0;
+        width: 100%;
+      }
+
+      legend {
+        padding: 1em 1em 0 1em;
+        color: #007bff;
+      }
+
+      #add {
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        line-height: 45px;
+        color: #fff;
+        font: bold 20px;
+        border-radius: 50%;
+        margin: -45px auto 0;
+      }
+
+      #add.disabled {
+        background-color: #666;
+        opacity: inherit;
+      }
+
+      button {
+        margin-left: 1em;
+        margin-top: 1em;
+      }
+    </style>
+
+    <script type="text/javascript" src="app.js" defer></script>
+
+    <title>TP 4</title>
+  </head>
+
+  <body>
+    <form>
+      <fieldset id="fieldset_1" class="fieldset">
+        <legend>Réservation</legend>
+
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <label> Date :</label>
+          </div>
+
+          <div class="col-sm-8">
+            <select class="date form-control"></select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <label> Nombres de places :</label>
+          </div>
+
+          <div class="col-sm-8">
+            <input type="number" class="quantite form-control" value="1" />
+          </div>
+        </div>
+      </fieldset>
+
+      <a href="#" disabled title="Ajouter une autre réservation" id="add" class="btn btn-primary disabled">+</a>
+
+      <input type="submit" class="btn btn-outline-success" value="Enregistrer les réservations"/>
+    </form>
+  </body>
+</html>
