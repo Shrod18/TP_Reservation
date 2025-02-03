@@ -12,7 +12,7 @@ Fonctionnalités
   - Un nouveau bloc similaire au premier est ajouté au formulaire.
   - Il possède un sélecteur de date et un champ numérique
   - Un bouton "Supprimer" est ajouté à chaque bloc (sauf le premier).
-  - Si un nombre maximal de réservations est atteint (ex: 5), le bouton "+" devient désactivé.
+  - Si un nombre maximal de réservations est atteint (taille du table datesToDisplay), le bouton "+" devient désactivé.
   - Lorsqu'une date est saisie, elle disparait du select de la réservation suivante
   - Lorsqu'un bloc de réservation est supprimé, la date sélectionnée dedans est de nouveau selectionnable
 
