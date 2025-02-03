@@ -2,16 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const addButton = document.getElementById("add");
     const initialSelect = document.querySelector(".date");
-    const maxReservations = 5;
     let reservationCount = 1;
-
     let datesToDisplay = [
         {value:"2024-01-06"},
         {value:"2024-01-13"},
         {value:"2024-01-20"},
         {value:"2024-01-27"},
     ];
-
+    const maxReservations = datesToDisplay.length;
+    
     function updateAddButton() {
         addButton.classList.toggle("disabled", reservationCount >= maxReservations);
     }
@@ -117,6 +116,5 @@ document.addEventListener("DOMContentLoaded", function () {
     updateAddButton();
     updateDateOptions();
     
-    // Remplir le premier select initial
     initialSelect.innerHTML = datesToDisplay.map(date => `<option value="${date.value}">${date.value}</option>`).join('');
 });
